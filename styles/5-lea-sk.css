@@ -1,0 +1,101 @@
+.lea-sk {
+    margin: 56px 0;
+    display: inline-flex;
+    gap: 56px;
+}
+.lea-sk__desc {
+    margin-top: 1.6em;
+    font-size: var(--font-size-text);
+    color: var(--color-text);
+}
+.lea-sk__desc strong {
+    font-weight: bold;
+}
+.lea-sk__title {
+    font-size: var(--font-size-subtitle);
+    font-weight: 100;
+}
+._learned .lea-sk__title em { color: #f16528; font-weight: bold; }
+._skills .lea-sk__title em { color: #2965F1; font-weight: bold; }
+.lea-sk__check {
+    margin-top: 1.6em;
+}
+.lea-sk__check li::before {
+    content: "✔";
+    margin-right: 0.5rem;
+    color: #4caf50;
+}
+.lea-sk__thumb {
+    position: relative;
+}
+.lea-sk__thumb::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 10%;
+    background-color: black;
+    border-radius: 50%;
+}
+@keyframes logo-hover {
+    from { transform: translatey(0); }
+    to { transform: translatey(10px); }
+}
+.lea-sk__logo {
+    animation-name: logo-hover;
+    animation-duration: 880ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes logo-shadow {
+    from { opacity: 0.08; }
+    to { opacity: 0.24; }
+}
+.lea-sk__thumb::after {
+    animation-name: logo-shadow;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@media (max-width: 768px) {
+    #learned {
+        border-bottom: 4px solid var(--color-light-bg);
+    }
+    .lea-sk {
+        flex-direction: column;
+    }
+    .lea-sk__logo {
+        width: 50%;
+    }
+    .lea-sk__content {
+        text-align: center;
+    }
+    .lea-sk__title div {
+        display: inline-block;
+        text-align: left;
+    }
+    .lea-sk__thumb::after {
+        left: 25%;
+        bottom: -16%;
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    #learned {
+        border-right: 4px solid var(--color-light-bg);
+    }
+    .lea-sk__logo {
+        width: 144px;
+    }
+    .lea-sk__content {
+        text-align: left;
+    }
+    .lea-sk__thumb::after {
+        left: calc(50% - 72px);
+        bottom: -24px;
+        width: 144px;
+    }
+}
