@@ -38,6 +38,7 @@
 @media (min-width: 769px) {
     .intro{
         height: 89vh;
+        width: 100%;
     }
     .intro__type {
         margin-top: 172px;

@@ -7,6 +7,7 @@
     margin-top: 48px;
     width: 100%;
     box-sizing: border-box;
+    padding: 0 16px;
 }
 .about__card {
     padding: 48px;
@@ -58,7 +59,7 @@
         position: relative;
         align-items: center;
         flex: 1;                
-        max-width: 360px;
+        max-width: 30%;
         cursor: pointer;
         transition: all 350ms;
     }
