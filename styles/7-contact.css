@@ -30,22 +30,22 @@ input[type=radio]:checked {
 
 .contact__slides {
     margin: 1.6em 0;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
 .contact__slide-con {
     display: flex;
-    width: 200vw;
+    width: 200%;
     transition: margin-left 500ms;
 }
 .contact__slide {
-    width: 100vw;
+    width: 100%;
 }
 #ct_1:checked ~ .contact__slides .contact__slide-con {
     margin-left: 0;
 }
 #ct_2:checked ~ .contact__slides .contact__slide-con {
-    margin-left: -100vw;
+    margin-left: -100%;
 }
 .contact__contacts {
     margin: 0 auto;

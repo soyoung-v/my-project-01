@@ -33,7 +33,7 @@
 
 body {
     margin: 0;
-    font-family: 'Noto Sans KR'. sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     min-height : 150vh;
 }
 
@@ -87,3 +87,4 @@ address { font-style: inherit;}
     white-space: nowrap;
     border-width: 0;
 }
+

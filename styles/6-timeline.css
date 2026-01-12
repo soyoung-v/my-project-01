@@ -5,11 +5,13 @@
     color: white;
 }
 .timeline {
-    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
     position: relative;
 }
 .timeline__list {
-    display: inline-flex;
+    display: flex; 
     font-size: var(--font-size-larger);
     font-weight: 100;
     text-align: left;
@@ -67,11 +69,19 @@
     }
     .timeline__list {
         margin: 56px 0 56px 40px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1000px;              
+        margin: 56px 0;
+        padding: 0 24px;
+        box-sizing: border-box;
     }
     .timeline__list li {
         position: relative;
-        width: 200px;
+        flex: 1;
         height: 120px;
+        text-align: center;
     }
     .timeline__list li span {
         display: inline-block;
@@ -87,9 +97,9 @@
         opacity: 1;
     }
     .timeline__progress {
-        left: 56px;
+         left: 24px;
+        right: 24px;
         top: 70px;
-        width: 1000px;
         height: 8px;
         background-color: rgba(255, 255, 255, 0.1);
     }
@@ -107,19 +117,19 @@
         background-color: var(--color-sub);
     }
     .timeline__list li:nth-child(2):hover ~ .timeline__progress::after {
-        width: 200px;
+        width: 20%;
     }
     .timeline__list li:nth-child(3):hover ~ .timeline__progress::after {
-        width: 400px;
+        width: 40%;
     }
     .timeline__list li:nth-child(4):hover ~ .timeline__progress::after {
-        width: 600px;
+        width: 60%;
     }
     .timeline__list li:nth-child(5):hover ~ .timeline__progress::after {
-        width: 800px;
+        width: 80%;
     }
     .timeline__list li:nth-child(6):hover ~ .timeline__progress::after {
-        width: 1000px;
+        width: 100%;
     }
 
 }

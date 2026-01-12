@@ -3,6 +3,7 @@
     background-image: url('../images/intro.jpg');
     background-size: cover;
     background-position: center;
+    
 }
 
 .intro__dark {
@@ -36,7 +37,7 @@
 
 @media (min-width: 769px) {
     .intro{
-        height: 500px;
+        height: 89vh;
     }
     .intro__type {
         margin-top: 172px;

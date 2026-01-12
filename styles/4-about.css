@@ -2,9 +2,11 @@
     background-color: var(--color-light-bg);
 }
 .about {
-    display: inline-flex;
+    display: flex;         
     gap: 1em;
     margin-top: 48px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .about__card {
     padding: 48px;
@@ -50,10 +52,13 @@
 @media (min-width: 769px) {
     #about {
         grid-column: 1/ -1;
+        width: 100%;
     }
     .about__card {
         position: relative;
-        width: 320px;
+        align-items: center;
+        flex: 1;                
+        max-width: 360px;
         cursor: pointer;
         transition: all 350ms;
     }
